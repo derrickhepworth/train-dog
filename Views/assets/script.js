@@ -7,7 +7,7 @@ $(document).ready(function (){
     //    console.log("Handler for click succesful.");
 
        // if all responses valid
-    if ($( "#clientName").val() !== '' || $( "#dogName".val() !== '' || $("#dogAge").val() !== '')){
+    if ($("#clientName").val() !== '' && $("#dogName").val() !== '' && $(dogAge).val() !== ''){
     var clientName = $( "#clientName" ).val();
     console.log("User = " + clientName);
     
