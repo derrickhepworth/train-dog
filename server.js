@@ -32,7 +32,13 @@ const path = require('path');
     });
   });
 
-
+  app.get('/newDog', (req, res) => {
+    Dog.findAll({
+      include: [Dog]
+    }).then(Dog => {
+      res.json(Dog);
+    });
+  });
 
 
 
