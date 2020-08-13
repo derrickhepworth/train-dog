@@ -1,5 +1,5 @@
 const express = require("express");
-const sequelize = require("./config/connection");
+const sequelize = require("sequelize");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -13,6 +13,16 @@ sequelize.sync({ force: true }).then(function() {
         console.log("App listening on PORT " + PORT);
     });
 });
+
+const sequelize = process.env.JAWSDB_URL
+    ? new Sequelize(process.env.JAWSDB_URL)
+    : new Sequelize("train-dog", "root", "", {
+        host: "localhost",
+        port: 3001,
+        dialect: "mysql"
+    });
+
+module.exports = sequelize;
 
 
 // const express = require("express");
