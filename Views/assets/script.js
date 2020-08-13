@@ -7,6 +7,7 @@ $(document).ready(function (){
     //    console.log("Handler for click succesful.");
 
        // if all responses valid
+    if ($( "#clientName").val() !== '' || $( "#dogName".val() !== '' || $("#dogAge").val() !== '')){
     var clientName = $( "#clientName" ).val();
     console.log("User = " + clientName);
     
@@ -14,7 +15,8 @@ $(document).ready(function (){
     console.log("Dog = " + dogName);
 
     var dogAge = $( "#dogAge" ).val();
-    console.log("Age = " + dogAge);
+    console.log("Age = " + dogAge );
+    console.log("empty age = " + typeof(dogAge));
 
     var dogBreed = $( "#dogBreed" ).val();
     console.log("Breed = " + dogBreed);
@@ -25,8 +27,14 @@ $(document).ready(function (){
     var dogSnipped = $( "#dogSnipped" ).val();
     console.log("Snipped = " + dogSnipped);
 
-
     // if invalid/incomplete
+    } else {
+        alert("Please answer all questions before submitting.");
+        function highlight (){
+            
+        };
+    };
+
    });
 
 
