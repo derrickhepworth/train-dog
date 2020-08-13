@@ -7,7 +7,7 @@ $(document).ready(function () {
            console.log("Handler for click succesful.");
 
         // if all responses valid
-        if ($("#clientName").val() !== '' && $("#dogName").val() !== '' && $(dogAge).val() !== '') {
+        if ($("#clientName").val() !== '' && $("#dogName").val() !== '' && $("#dogAge").val() !== '') {
             var clientName = $("#clientName").val();
             // console.log("User = " + clientName);
 
@@ -39,6 +39,7 @@ $(document).ready(function () {
             // if invalid/incomplete
         } else {
             alert("Please answer all questions before submitting.");
+            // event.preventDefault();
             // Highlight unanswered text
             // function highlight (){
             //     if ()
