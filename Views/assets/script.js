@@ -5,6 +5,7 @@ $(document).ready(function (){
     // On Click Function to create profile object or redirect if invalid
    $("#profileSubmit").click(function(){
     //    console.log("Handler for click succesful.");
+
        // if all responses valid
     var clientName = $( "#clientName" ).val();
     console.log("User = " + clientName);
@@ -14,6 +15,15 @@ $(document).ready(function (){
 
     var dogAge = $( "#dogAge" ).val();
     console.log("Age = " + dogAge);
+
+    var dogBreed = $( "#dogBreed" ).val();
+    console.log("Breed = " + dogBreed);
+
+    var dogSex = $( "#dogSex" ).val();
+    console.log("Sex = " + dogSex);
+
+    var dogSnipped = $( "#dogSnipped" ).val();
+    console.log("Snipped = " + dogSnipped);
 
 
     // if invalid/incomplete
