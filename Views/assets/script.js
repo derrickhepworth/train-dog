@@ -39,7 +39,7 @@ $(document).ready(function () {
             // if invalid/incomplete
         } else {
             alert("Please answer all questions before submitting.");
-            // event.preventDefault();
+            event.preventDefault();
             // Highlight unanswered text
             // function highlight (){
             //     if ()
