@@ -1,16 +1,18 @@
 
 $(document).ready(function (){
-    var week =[];
-    console.log(week);
-    var tasks = [];
-    console.log(tasks);
-
+   
 
     // On Click Function to create profile object or redirect if invalid
    $("#profileSubmit").click(function(){
-    console.log("Handler for click sucdesful.");
-   });
+    console.log("Handler for click succesful.");
+    var clientName = $( "#clientName" ).val();
+    
 
+    // if all responses valid
+    console.log(clientName);
+
+    // if invalid/incomplete
+   });
 
 
 
