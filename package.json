@@ -35,5 +35,9 @@
     "type": "git",
     "url": "git+https://github.com/npm/security-holder.git"
   },
-  "version": "0.0.1-security"
+  "version": "0.0.1-security",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
 }
