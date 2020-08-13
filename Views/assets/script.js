@@ -4,12 +4,17 @@ $(document).ready(function (){
 
     // On Click Function to create profile object or redirect if invalid
    $("#profileSubmit").click(function(){
-    console.log("Handler for click succesful.");
+    //    console.log("Handler for click succesful.");
+       // if all responses valid
     var clientName = $( "#clientName" ).val();
+    console.log("User = " + clientName);
     
+    var dogName = $( "#dogName" ).val();
+    console.log("Dog = " + dogName);
 
-    // if all responses valid
-    console.log(clientName);
+    var dogAge = $( "#dogAge" ).val();
+    console.log("Age = " + dogAge);
+
 
     // if invalid/incomplete
    });
