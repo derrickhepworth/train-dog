@@ -1,8 +1,15 @@
 
 $(document).ready(function (){
     var week =[];
+    console.log(week);
     var tasks = [];
-    // var weekOne = false;
+    console.log(tasks);
+
+
+    // On Click Function to create profile object or redirect if invalid
+   $("#profileSubmit").click(function(){
+    console.log("Handler for click sucdesful.");
+   });
 
 
 
