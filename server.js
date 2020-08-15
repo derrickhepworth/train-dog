@@ -33,7 +33,7 @@ const path = require('path');
   });
 
   app.get('/newDog', (req, res) => {
-    Dog.findAll({
+    dog.findAll({
       include: [Dog]
     }).then(Dog => {
       res.json(Dog);
