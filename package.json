@@ -38,9 +38,11 @@
   "version": "0.0.1-security",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
     "inquirer": "^7.3.3",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
+    "react": "^16.13.1",
     "sequelize": "^6.3.4"
   }
 }

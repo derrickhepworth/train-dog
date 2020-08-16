@@ -59,18 +59,20 @@ $(document).ready(function () {
 
 });
 
+// var Dog = localStorage.getItem("Dog");
 
+// function dogProfileInfo(dog) {
+//     $("#dog owner").text(dog.clientName);
+//     $("#dog name").text(dog.dogName);
+//     $("#dog age").text(dog.dogAge);
+//     $("#dog breed").text(dog.dogBreed);
+//     $("#dog sex").text(dog.dogSex);
+//     $("#dog spayed/neutered").text(dog.dogSnipped);
 
-function dogProfileInfo(dog) {
-    $("#dog owner").text(dog.clientName);
-    $("#dog name").text(dog.dogName);
-    $("#dog age").text(dog.dogAge);
-    $("#dog breed").text(dog.dogBreed);
-    $("#dog sex").text(dog.dogSex);
-    $("#dog spayed/neutered").text(dog.dogSnipped);
-};
+    
+// };
 
-dogProfileInfo(dog);
+// dogProfileInfo(Dog);
 
 
 

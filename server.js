@@ -1,7 +1,11 @@
 const express = require("express");
+const expresshandlebars = require("express-handlebars");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+app.engine('handlebars', expresshandlebars({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
 
 
 app.use(express.urlencoded({ extended: true }));
@@ -22,7 +26,7 @@ const path = require('path');
   app.use('/', express.static(__dirname + '/Views')); //translate static file requests from /log into /docs for showing documentation site.
 
   app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Views/index.html'));
+    res.render('index');
   });
 
   app.post('/newDog', (req, res) => {
@@ -34,7 +38,7 @@ const path = require('path');
 
   app.get('/newDog', (req, res) => {
     dog.findAll({
-      include: [Dog]
+      include: [dog]
     }).then(Dog => {
       res.json(Dog);
     });
