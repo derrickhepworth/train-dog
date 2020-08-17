@@ -31,14 +31,16 @@
 
     <section id="profile" class="mainSection">
         <h2 class="section-title">Your Dogs Profile</h2>
-        <div id="profileColumns">
-            <li>
-                <p>Client Name: {{clientName}}</p>
-                <p>Dogs Name: {{dogName}}</p>
-                <p>Dogs Age: {{dogAge}}</p>
-                <p>Dogs Breed: {{dogBreed}}</p>
-                <p>Dogs Sex: {{dogSex}}</p>
-                <p>Dog Spayed/Neutered: {{dogSnipped}}</p>
-            </li>
-        </div>
+        <form action="newDog" method="GET">
+            <div id="profileColumns">
+                <li>
+                    <p>Client Name: {{clientName}}</p>
+                    <p>Dogs Name: {{dogName}}</p>
+                    <p>Dogs Age: {{dogAge}}</p>
+                    <p>Dogs Breed: {{dogBreed}}</p>
+                    <p>Dogs Sex: {{dogSex}}</p>
+                    <p>Dog Spayed/Neutered: {{dogSnipped}}</p>
+                </li>
+            </div>
+        </form>
     </section>

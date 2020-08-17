@@ -1,149 +1,148 @@
+<header>
+    <h1>
+        <a href="/"> GOOD DOG</a>
+    </h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="#profile">Profile</a>
+            </li>
+            <li>
+                <a href="#progress">Progress</a>
+            </li>
+            <li>
+                <a href="#reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-    <header>
-        <h1>
-            <a href="/"> GOOD DOG</a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#profile">Profile</a>
-                </li>
-                <li>
-                    <a href="#progress">Progress</a>
-                </li>
-                <li>
-                    <a href="#reference">Reference</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<section class="jumbotron">
 
-    <section class="jumbotron">
+    <div id="jumbo-cta">
+        <h2>No two dogs are exactly the same.</h2>
+        <p>We want to get to know <span>your dog</span> to make a training program that's right for
+            <span>them</span>. We'll
+            help you keep track of their progress towards your goals. </p>
+    </div>
 
-        <div id="jumbo-cta">
-            <h2>No two dogs are exactly the same.</h2>
-            <p>We want to get to know <span>your dog</span> to make a training program that's right for
-                <span>them</span>. We'll
-                help you keep track of their progress towards your goals. </p>
-        </div>
+</section>
 
-    </section>
+<section id="profile" class="mainSection">
+    <h2 class="section-title">Create a Profile</h2>
+    <form action="newDog" method="POST">
+        <div id="profileColumns">
 
-    <section id="profile" class="mainSection">
-        <h2 class="section-title">Create a Profile</h2>
-        <form action="newDog" method="POST">
-            <div id="profileColumns">
-               
 
-                <section class="container">
-                    <h3> What is your name?</h3>
-                    <input name="clientName" id="clientName" type="text" placeholder="First Last" class="form-control">
+            <section class="container">
+                <h3> What is your name?</h3>
+                <input name="clientName" id="clientName" type="text" placeholder="First Last" class="form-control">
 
-                    <h3> What is your dogs name?</h3>
-                    <input name="dogName" id="dogName" type="text" placeholder="Dog Name" class="form-control">
+                <h3> What is your dogs name?</h3>
+                <input name="dogName" id="dogName" type="text" placeholder="Dog Name" class="form-control">
 
-                    <h3> How old is your Dog?</h3>
-                    <input name="dogAge" id="dogAge" type="number" placeholder="0-120 Months" class="form-control">
+                <h3> How old is your Dog?</h3>
+                <input name="dogAge" id="dogAge" type="number" placeholder="0-120 Months" class="form-control">
 
-                </section>
+            </section>
 
-                <section class="container">
-                    <h3> What breed is your dog?</h3>
-                    <select name="dogBreed" id="dogBreed" type="text" class="form-control">
-                        <option value="shepherd">Shepherd</option>
-                        <option value="bulldog">Bulldog</option>
-                        <option value="coonhound">Coonhound</option>
-                        <option value="pitbull">Pitbull</option>
-                    </select>
-                    <br>
-                    <br>
-                    <h3>Not sure...</h3>
-                    <a href="https://youtu.be/HlhVtw6K4k8">This video will help</a>
-                </section>
+            <section class="container">
+                <h3> What breed is your dog?</h3>
+                <select name="dogBreed" id="dogBreed" type="text" class="form-control">
+                    <option value="shepherd">Shepherd</option>
+                    <option value="bulldog">Bulldog</option>
+                    <option value="coonhound">Coonhound</option>
+                    <option value="pitbull">Pitbull</option>
+                </select>
+                <br>
+                <br>
+                <h3>Not sure...</h3>
+                <a href="https://youtu.be/HlhVtw6K4k8">This video will help</a>
+            </section>
 
-                <section class="container">
-                    <h3> Is your dog Male or Female?</h3>
-                    <select name="dogSex" id="dogSex" type="text" class="form-control">
-                        <option value="female">Female</option>
-                        <option value="male">Male</option>
-                    </select><br>
-                    <br>
+            <section class="container">
+                <h3> Is your dog Male or Female?</h3>
+                <select name="dogSex" id="dogSex" type="text" class="form-control">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select><br>
+                <br>
 
-                    <!-- <input type="radio" id="male" name="gender" value="male">
+                <!-- <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label><br>
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label><br> -->
 
-                    <h3> Is your dog spayed/neutered?</h3>
-                    <select name="dogSnipped" id="dogSnipped" type="text" class="form-control">
-                        <option value="true">Yes</option>
-                        <option value="false">No</option>
-                    </select><br>
+                <h3> Is your dog spayed/neutered?</h3>
+                <select name="dogSnipped" id="dogSnipped" type="text" class="form-control">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select><br>
 
-                    <!-- <input type="radio" id="snipped" name="snipped" value=true>
+                <!-- <input type="radio" id="snipped" name="snipped" value=true>
                 <label for="snipped">Yes</label><br>
                 <input type="radio" id="notSnipped" name="snipped" value=false>
                 <label for="snipped">No</label><br> -->
-                    <br>
-                </section>
-            </div>
-            <input id="profileSubmit" type="submit" value="Submit" href="/dog-profile">
-        </form>
-
-
-    </section>
-
-    <!-- Track progress and checklist -->
-    <section id="progress" class="mainSection">
-        <h2 class="section-title"> Progress</h2>
-
-        <div class="week">
-            <h2>Week 1</h2>
-            <h3>Get to know your dog even better.</h3>
-            <p>Welcome to your Good Dog Program. Dogs are amazing! They can also be stressful.
-                Over the next 6 weeks you will foster a new relationship with your dog. Dogs
-                thrive with structure and routine. Dogs who act out or misbehave simply just
-                don't know better. There is a lot to learn on your journey - for you and your
-                pup. This week you will lean the basics of <a>How Dogs Think</a> and the two
-                most essential commands, <a>Sit</a> and <a>Come</a>. You'll be amazed at how
-                much progress can be made in one week. We KNOW you love your dog, you wouldn't
-                be here if you didn't. That being said, we promise you that after the completion
-                of this program you will know your dog even better and you will have a deeper
-                relationship with them. </p>
-
-            <h2>Checklist</h2>
-
-            <div class="checkList">
-                <input type="radio" id="weekOneOne" name="weekOne" value=false>
-                <label for="read">Read <a>How Dogs Think</a> </label><br>
-
-                <input type="radio" id="weekOneTwo" name="weekOne" value=false>
-                <label for="read">Read <a>Sit</a> </label><br>
-
-                <input type="radio" id="weekOneThree" name="weekOne" value=false>
-                <label for="read">Read <a>Come</a> </label><br>
-
-                <input type="radio" id="weekOneFive" name="weekOne" value=false>
-                <label for="read">Read <a>Recommended Equipment</a> </label><br>
-
-                <input type="radio" id="weekOneFour" name="weekOne" value=false>
-                <label for="read">Practice Sit and Come 20 mins /twice a day</label><br>
-            </div>
-            <h4 class="section-title"></h4>
+                <br>
+            </section>
         </div>
+        <input id="profileSubmit" type="submit" value="Submit" href="/dog-profile">
+    </form>
 
-        <div class="week right section-right">
-            <h2 class="right">Week 2</h2>
-            <h3 class="right">Boundaries and Balance</h3>
-            <p>Week 2 instructions here. <a>Heel</a> and <a>Loose Leash</a> Blah Blah Blah Blah </p>
 
-            <h2 class="right">Checklist</h2>
+</section>
 
-            <div class="checkList right">
-                <input type="radio" id="weekTwoOne" name="weekTwo" value=false>
-                <label for="read">Week Two <a> Checklist here </a> </label><br>
+<!-- Track progress and checklist -->
+<section id="progress" class="mainSection">
+    <h2 class="section-title"> Progress</h2>
 
-                <!-- <input type="radio" id="weekOneTwo" name="weekOne" value=false>
+    <div class="week">
+        <h2>Week 1</h2>
+        <h3>Get to know your dog even better.</h3>
+        <p>Welcome to your Good Dog Program. Dogs are amazing! They can also be stressful.
+            Over the next 6 weeks you will foster a new relationship with your dog. Dogs
+            thrive with structure and routine. Dogs who act out or misbehave simply just
+            don't know better. There is a lot to learn on your journey - for you and your
+            pup. This week you will lean the basics of <a>How Dogs Think</a> and the two
+            most essential commands, <a>Sit</a> and <a>Come</a>. You'll be amazed at how
+            much progress can be made in one week. We KNOW you love your dog, you wouldn't
+            be here if you didn't. That being said, we promise you that after the completion
+            of this program you will know your dog even better and you will have a deeper
+            relationship with them. </p>
+
+        <h2>Checklist</h2>
+
+        <div class="checkList">
+            <input type="radio" id="weekOneOne" name="weekOne" value=false>
+            <label for="read">Read <a>How Dogs Think</a> </label><br>
+
+            <input type="radio" id="weekOneTwo" name="weekOne" value=false>
+            <label for="read">Read <a>Sit</a> </label><br>
+
+            <input type="radio" id="weekOneThree" name="weekOne" value=false>
+            <label for="read">Read <a>Come</a> </label><br>
+
+            <input type="radio" id="weekOneFive" name="weekOne" value=false>
+            <label for="read">Read <a>Recommended Equipment</a> </label><br>
+
+            <input type="radio" id="weekOneFour" name="weekOne" value=false>
+            <label for="read">Practice Sit and Come 20 mins /twice a day</label><br>
+        </div>
+        <h4 class="section-title"></h4>
+    </div>
+
+    <div class="week right section-right">
+        <h2 class="right">Week 2</h2>
+        <h3 class="right">Boundaries and Balance</h3>
+        <p>Week 2 instructions here. <a>Heel</a> and <a>Loose Leash</a> Blah Blah Blah Blah </p>
+
+        <h2 class="right">Checklist</h2>
+
+        <div class="checkList right">
+            <input type="radio" id="weekTwoOne" name="weekTwo" value=false>
+            <label for="read">Week Two <a> Checklist here </a> </label><br>
+
+            <!-- <input type="radio" id="weekOneTwo" name="weekOne" value=false>
                     <label for="read">Read <a>Sit</a> </label><br>
                     
                     <input type="radio" id="weekOneThree" name="weekOne" value=false>
@@ -154,21 +153,20 @@
                     
                     <input type="radio" id="weekOneFour" name="weekOne" value=false>
                     <label for="read">Practice Sit and Come 20 mins /twice a day</label><br> -->
-            </div>
-            <h4 class="section-title"></h4>
         </div>
+        <h4 class="section-title"></h4>
+    </div>
 
 
-        <!-- Plotly Graph Area -->
-        <div id="tester" style="width:600px;height:250px;">
-        </div>
+    <!-- Plotly Graph Area -->
+    <div id="tester" style="width:600px;height:250px;">
+    </div>
 
-    </section>
+</section>
 
-    <!-- Reference, terms, gen info, etc.  -->
-    <section id="reference">
+<!-- Reference, terms, gen info, etc.  -->
+<section id="reference">
 
-    </section>
+</section>
 
-    <!-- JS link -->
-    
+<!-- JS link -->
