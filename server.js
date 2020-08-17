@@ -26,6 +26,7 @@ const path = require('path');
   app.use('/', express.static(__dirname + '/Views')); //translate static file requests from /log into /docs for showing documentation site.
 
   app.get('/', (req, res) => {
+    const data = {dog}
     res.render('index');
   });
 
